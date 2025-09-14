@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Cadastro de Perfil</h2>
+        <p class="subtitle">Preencha os dados abaixo com atenção para continuar.</p>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha forte">
+            </div>
+            
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Sua idade">
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+            
+            <div class="form-group">
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" name="tel" placeholder="(00) 99999-9999">
+            </div>
+
+            <div class="form-group">
+                <label for="site">Site Pessoal:</label>
+                <input type="url" id="site" name="site" placeholder="https://www.seu-site.com">
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentários:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Algum comentário ou observação?"></textarea>
+            </div>
+            
+            <div class="form-group fieldset-group">
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="feminino" name="genero" value="feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="outro" name="genero" value="outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group fieldset-group">
+                <fieldset>
+                    <legend>Interesses</legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+                        <label for="esportes">Esportes</label>
+                        <input type="checkbox" id="musica" name="interesses[]" value="musica">
+                        <label for="musica">Música</label>
+                        <input type="checkbox" id="leitura" name="interesses[]" value="leitura">
+                        <label for="leitura">Leitura</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="br">Brasil</option>
+                    <option value="eua">Estados Unidos</option>
+                    <option value="arg">Argentina</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="idiomas">Idiomas que você fala:</label>
+                <select id="idiomas" name="idiomas[]" multiple size="4">
+                    <option value="portugues">Português</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="frances">Francês</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" id="foto" name="foto">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
